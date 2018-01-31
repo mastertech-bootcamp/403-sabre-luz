@@ -17,7 +17,7 @@ export class HomePage {
     public lanterna: Flashlight,
     public shake: Shake) {
 
-      const watch = this.shake.startWatch(10).subscribe(() => {
+      this.shake.startWatch(10).subscribe(() => {
         this.somMove.play();
       });
   }
