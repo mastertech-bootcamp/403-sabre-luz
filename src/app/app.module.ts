@@ -4,6 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { Flashlight } from '@ionic-native/flashlight';
+import { Shake } from '@ionic-native/shake';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -26,6 +27,7 @@ import { HomePage } from '../pages/home/home';
     StatusBar,
     SplashScreen,
     Flashlight,
+    Shake,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
